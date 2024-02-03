@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-res://characters/sprite_2d.tscn
-res://Levels/node_2d.tscn
-res://characters/Player.tscn
-res://Levels/level1.tscn
-res://characters/Player.gd
-=======
-res://Levels/game_level.tscn
-res://exit.gd
-res://player2.tscn
-res://exit.tscn
-res://Levels/game_level.gd
-res://player2.gd
-res://level_2.tscn
->>>>>>> levels
+res://Title-Screen.gd
+res://title_screen.tscn
+res://test.tscn
+res://options_screen.gd
+res://options_screen.tscn
+res://Interface/title_screen.tscn
+res://Interface/options_screen.tscn
+res://Interface/test.tscn
+res://Interface/Title-Screen.gd
+res://Interface/options_screen.gd
