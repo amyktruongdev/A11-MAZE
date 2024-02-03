@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b1swec0fwicen"]
 
-[ext_resource type="Texture2D" uid="uid://byod24ix8xdri" path="res://A11-Maze.png" id="1_nyhff"]
-[ext_resource type="Script" path="res://player2.gd" id="1_sbloi"]
+[ext_resource type="Texture2D" uid="uid://byod24ix8xdri" path="res://art/A11-Maze.png" id="1_nyhff"]
+[ext_resource type="Script" path="res://characters/player2.gd" id="1_sbloi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_td0qi"]
 radius = 56.0
