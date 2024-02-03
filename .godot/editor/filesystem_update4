@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-res://characters/sprite_2d.tscn
-res://Levels/node_2d.tscn
-res://characters/Player.tscn
-res://Levels/level1.tscn
-res://characters/Player.gd
-=======
-res://Levels/game_level.tscn
-res://exit.gd
 res://player2.tscn
+res://characters/Player.tscn
+res://Levels/game_level.tscn
 res://exit.tscn
-res://Levels/game_level.gd
-res://player2.gd
 res://level_2.tscn
->>>>>>> levels
+res://characters/Player.gd
+res://player2.gd
+res://characters/player2.tscn
