@@ -1,0 +1,7 @@
+res://Levels/game_level.tscn
+res://exit.gd
+res://player2.tscn
+res://exit.tscn
+res://Levels/game_level.gd
+res://player2.gd
+res://level_2.tscn
