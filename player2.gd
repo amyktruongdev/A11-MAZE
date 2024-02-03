@@ -16,7 +16,6 @@ func _physics_process(_delta):
 
 
 func _on_exit_body_entered(body):
-	# Remove the current level
 	print("next")
 
 
