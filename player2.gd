@@ -2,7 +2,7 @@
 
 extends CharacterBody2D
 
-@export var move_speed : float = 100
+@export var move_speed : float = 300
 
 func _physics_process(_delta):
 	var input_direction = Vector2(
@@ -13,5 +13,11 @@ func _physics_process(_delta):
 	velocity = input_direction * move_speed
 	
 	move_and_slide()
+
+
+func _on_exit_body_entered(body):
+	# Remove the current level
+	print("next")
+
 
 

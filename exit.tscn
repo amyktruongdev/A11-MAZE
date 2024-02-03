@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://7v8ymm3bd5n3"]
+
+[ext_resource type="Texture2D" uid="uid://c48jjfaj1tcyv" path="res://Tilesets/white.png" id="1_ls5ra"]
+[ext_resource type="Script" path="res://exit.gd" id="1_t087b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sq5w6"]
+size = Vector2(156, 155)
+
+[node name="Exit" type="Area2D"]
+script = ExtResource("1_t087b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ls5ra")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sq5w6")
