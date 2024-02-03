@@ -1,8 +1,9 @@
-res://player2.tscn
-res://characters/Player.tscn
 res://Levels/game_level.tscn
 res://exit.tscn
 res://level_2.tscn
-res://characters/Player.gd
-res://player2.gd
 res://characters/player2.tscn
+res://characters/Player.tscn
+res://tree.tscn
+res://characters/player2.gd
+res://star.tscn
+res://star.gd
