@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfpe1bi44g1xh"]
+
+[ext_resource type="Script" path="res://characters/Player.gd" id="1_1nism"]
+[ext_resource type="Texture2D" uid="uid://byod24ix8xdri" path="res://art/A11-Maze.png" id="1_xcvvh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v63wb"]
+size = Vector2(9, 14.5)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_1nism")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1.25)
+shape = SubResource("RectangleShape2D_v63wb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0350694, 0.0350694)
+texture = ExtResource("1_xcvvh")
