@@ -1,0 +1,122 @@
+[gd_scene load_steps=7 format=3 uid="uid://kf4cpqpf3efd"]
+
+[ext_resource type="Script" path="res://Interface/Title-Screen.gd" id="1_a58hh"]
+[ext_resource type="AudioStream" uid="uid://dg1and38afha4" path="res://soundeffects/quit.mp3" id="2_8xph1"]
+[ext_resource type="AudioStream" uid="uid://cx81scfv8hevi" path="res://soundeffects/optiongamesound.mp3" id="2_f5dib"]
+[ext_resource type="Texture2D" uid="uid://cp23ns71noorh" path="res://art/Logo A11-Maze.png" id="2_jixwa"]
+[ext_resource type="AudioStream" uid="uid://4ruma4cxa1y1" path="res://soundeffects/loadgamesound.mp3" id="3_a8c8s"]
+[ext_resource type="AudioStream" uid="uid://btuyosy5hdklx" path="res://soundeffects/newgamesound.mp3" id="3_js6vi"]
+
+[node name="Title-Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a58hh")
+
+[node name="quitgamesound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_8xph1")
+
+[node name="optiongamesound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_f5dib")
+
+[node name="loadgamesound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_a8c8s")
+
+[node name="newgamesound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_js6vi")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1283.0
+offset_bottom = 638.0
+color = Color(0, 0.360784, 0.568627, 1)
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 80.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(608, 280)
+metadata/_edit_group_ = true
+
+[node name="Logo container" type="VBoxContainer" parent="ColorRect/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect/MarginContainer/Logo container"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect/MarginContainer/Logo container/MarginContainer"]
+position = Vector2(640, 88)
+scale = Vector2(0.791667, 0.777778)
+texture = ExtResource("2_jixwa")
+
+[node name="Buttoncontainer" type="VBoxContainer" parent="ColorRect/MarginContainer/Logo container"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer"]
+layout_mode = 2
+
+[node name="New Game" type="Button" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.756863, 0.027451, 1)
+theme_override_font_sizes/font_size = 28
+text = "New Game"
+
+[node name="MarginContainer2" type="MarginContainer" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer"]
+layout_mode = 2
+
+[node name="Load" type="Button" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.756863, 0.027451, 1)
+theme_override_font_sizes/font_size = 28
+text = "Load"
+
+[node name="MarginContainer5" type="MarginContainer" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer"]
+layout_mode = 2
+
+[node name="Leaderboard" type="Button" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer5"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.756863, 0.027451, 1)
+theme_override_font_sizes/font_size = 28
+text = "                        Leaderboard                        "
+
+[node name="MarginContainer3" type="MarginContainer" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer"]
+layout_mode = 2
+
+[node name="Options" type="Button" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.756863, 0.027451, 1)
+theme_override_font_sizes/font_size = 28
+text = "Options"
+
+[node name="MarginContainer4" type="MarginContainer" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer"]
+layout_mode = 2
+
+[node name="Quit" type="Button" parent="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer4"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.756863, 0.027451, 1)
+theme_override_font_sizes/font_size = 28
+text = "Quit"
+
+[connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer/New Game" to="." method="_on_new_game_mouse_entered"]
+[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer/New Game" to="." method="_on_new_game_pressed"]
+[connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer2/Load" to="." method="_on_load_mouse_entered"]
+[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer2/Load" to="." method="_on_load_pressed"]
+[connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer5/Leaderboard" to="." method="_on_new_game_mouse_entered"]
+[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer5/Leaderboard" to="." method="_on_leaderboard_pressed"]
+[connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3/Options" to="." method="_on_options_mouse_entered"]
+[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3/Options" to="." method="_on_stage_selection_pressed"]
+[connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer4/Quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer4/Quit" to="." method="_on_quit_pressed"]
