@@ -61,4 +61,5 @@ func _input(event):
 	if scene_path != 'res://Interface/title_screen.tscn':
 		if event is InputEventKey and event.pressed:
 			if event.keycode == KEY_ESCAPE:
+				await _save_to_file()
 				get_tree().change_scene_to_file("res://Interface/title_screen.tscn")
