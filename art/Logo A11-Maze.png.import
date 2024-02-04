@@ -2,26 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<<< HEAD:art/Logo A11-Maze.png.import
-uid="uid://ci8ro8g1o5bku"
+uid="uid://cp23ns71noorh"
 path="res://.godot/imported/Logo A11-Maze.png-bf004d1e09612a038736995bd3173db3.ctex"
-========
-uid="uid://cohd1nhwllm1i"
-path="res://.godot/imported/tree_cb1.png-ae11b4a71111c2a867e51a7c0caf3af3.ctex"
->>>>>>>> integration:art/tree_cb1.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:art/Logo A11-Maze.png.import
 source_file="res://art/Logo A11-Maze.png"
 dest_files=["res://.godot/imported/Logo A11-Maze.png-bf004d1e09612a038736995bd3173db3.ctex"]
-========
-source_file="res://art/tree_cb1.png"
-dest_files=["res://.godot/imported/tree_cb1.png-ae11b4a71111c2a867e51a7c0caf3af3.ctex"]
->>>>>>>> integration:art/tree_cb1.png.import
 
 [params]
 

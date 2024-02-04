@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Interface/Title-Screen.gd" id="1_a58hh"]
 [ext_resource type="AudioStream" uid="uid://dg1and38afha4" path="res://soundeffects/quit.mp3" id="2_8xph1"]
 [ext_resource type="AudioStream" uid="uid://cx81scfv8hevi" path="res://soundeffects/optiongamesound.mp3" id="2_f5dib"]
-[ext_resource type="Texture2D" uid="uid://ci8ro8g1o5bku" path="res://art/Logo A11-Maze.png" id="2_jixwa"]
+[ext_resource type="Texture2D" uid="uid://cp23ns71noorh" path="res://art/Logo A11-Maze.png" id="2_jixwa"]
 [ext_resource type="AudioStream" uid="uid://4ruma4cxa1y1" path="res://soundeffects/loadgamesound.mp3" id="3_a8c8s"]
 [ext_resource type="AudioStream" uid="uid://btuyosy5hdklx" path="res://soundeffects/newgamesound.mp3" id="3_js6vi"]
 

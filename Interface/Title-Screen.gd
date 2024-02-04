@@ -4,7 +4,7 @@ extends Control
 func _on_new_game_pressed():
 	pass # Replace with function body.
 	get_tree().change_scene_to_file("res://Levels/game_level.tscn")
-	
+
 
 func _on_load_pressed():
 	pass # Replace with function body.
