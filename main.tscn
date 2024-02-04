@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsv168j26p3e3"]
+[gd_scene load_steps=3 format=3 uid="uid://ds73nudc1gaaf"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_lotg5"]
+[ext_resource type="PackedScene" uid="uid://kf4cpqpf3efd" path="res://Interface/title_screen.tscn" id="2_uitpv"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -39,5 +40,9 @@ offset_bottom = 53.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Submit"
+
+[node name="Title-Screen" parent="." instance=ExtResource("2_uitpv")]
+visible = false
+layout_mode = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
