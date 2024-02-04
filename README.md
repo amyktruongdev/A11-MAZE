@@ -7,7 +7,10 @@ Team Members:
 - Amy Truong
 - Brett Bass
 - Aolany Acosta
-
+## Mentors
+- Max Hops 
+- Cordero Hernandez
+- 
 ## REQUIREMENTS
 - Using + integrating operating system level accesibility API's
 - Save Progress
