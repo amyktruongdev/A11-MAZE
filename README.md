@@ -1,6 +1,6 @@
 # A11-MAZE
 
-_**GROUP #3**_\
+**GROUP #3**
 Team Members:
 - Sam Hernandez
 - Connie Chen
