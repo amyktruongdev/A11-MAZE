@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://coin.gd
 res://Levels/game_level.tscn
 res://exit.tscn
@@ -9,3 +10,7 @@ res://characters/player2.gd
 res://player_variables.gd
 res://tree.gd
 res://player.gd
+=======
+res://characters/player2.tscn
+res://characters/player2.gd
+>>>>>>> 04e22e8d702c777f8a95cc11897fa5fb1ff81d67
