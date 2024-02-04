@@ -51,8 +51,9 @@ func _save_to_file():
 	
 func _notification(what):
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		
 		print(loaded_stage)
-		_save_to_file()
+		await _save_to_file()
 		get_tree().quit()
 
 func _input(event):
