@@ -1,5 +1,13 @@
 # A11-MAZE
 
+GROUP #3
+Team Members:
+- Sam Hernandez
+- Connie Chen
+- Amy Truong
+- Brett Bass
+- Aolany Acosta
+
 ## REQUIREMENTS
 - Using + integrating operating system level accesibility API's
 - Save Progress
