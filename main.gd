@@ -1,7 +1,7 @@
 extends Control
 
 var player_name
-var score = 10
+var score = randi() % 100 + 10
 
 @onready var leaderboard_scene = preload("res://addons/silent_wolf/Scores/Leaderboard.tscn")
 #

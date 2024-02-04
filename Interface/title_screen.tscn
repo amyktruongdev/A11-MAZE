@@ -120,7 +120,7 @@ text = "Quit"
 [connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer5/Leaderboard" to="." method="_on_leaderboard_mouse_entered"]
 [connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer5/Leaderboard" to="." method="_on_leaderboard_pressed"]
 [connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3/Options" to="." method="_on_options_mouse_entered"]
-[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3/Options" to="." method="_on_stage_selection_pressed"]
+[connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer3/Options" to="." method="_on_options_pressed"]
 [connection signal="mouse_entered" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer4/Quit" to="." method="_on_quit_mouse_entered"]
 [connection signal="pressed" from="ColorRect/MarginContainer/Logo container/Buttoncontainer/MarginContainer4/Quit" to="." method="_on_quit_pressed"]
