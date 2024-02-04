@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://b1swec0fwicen" path="res://characters/player2.tscn" id="1_x3d1g"]
 [ext_resource type="Texture2D" uid="uid://dn65gnl2acgh2" path="res://Tilesets/black.png" id="2_8ymlq"]
 [ext_resource type="Texture2D" uid="uid://c48jjfaj1tcyv" path="res://Tilesets/white.png" id="3_27duv"]
-[ext_resource type="PackedScene" uid="uid://7v8ymm3bd5n3" path="res://exit.tscn" id="3_45yov"]
+[ext_resource type="PackedScene" uid="uid://7v8ymm3bd5n3" path="res://Levels/exit.tscn" id="3_45yov"]
 [ext_resource type="PackedScene" uid="uid://cl5klt41xb5yi" path="res://coin.tscn" id="6_bvtsg"]
 [ext_resource type="PackedScene" uid="uid://fxd1xvvwg17b" path="res://tree.tscn" id="6_unthl"]
-[ext_resource type="Script" path="res://coin.gd" id="7_m2lpn"]
+[ext_resource type="PackedScene" uid="uid://q2kyos6yiq1e" path="res://assets/tree.tscn" id="7_3112v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2txdx"]
 texture = ExtResource("2_8ymlq")
@@ -1007,13 +1007,10 @@ position = Vector2(573, 589)
 [node name="coin2" parent="." instance=ExtResource("6_bvtsg")]
 position = Vector2(904.5, 358.5)
 scale = Vector2(0.5, 0.5)
-script = ExtResource("7_m2lpn")
 
 [node name="coin" parent="." instance=ExtResource("6_bvtsg")]
 position = Vector2(603, 239)
 scale = Vector2(0.5, 0.5)
-script = ExtResource("7_m2lpn")
 
-[connection signal="body_entered" from="Exit" to="Exit" method="_on_body_entered"]
-[connection signal="body_entered" from="coin2" to="coin2" method="_on_body_entered"]
-[connection signal="body_entered" from="coin" to="coin" method="_on_body_entered"]
+[node name="Tree23" parent="." instance=ExtResource("7_3112v")]
+position = Vector2(780, 385)
