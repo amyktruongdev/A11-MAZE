@@ -1,2 +1,4 @@
 res://characters/player2.tscn
 res://characters/player2.gd
+res://level_2.tscn
+res://characters/Player.tscn

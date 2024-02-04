@@ -29,6 +29,7 @@ radius = 207.0
 height = 650.0
 
 [node name="Player" type="CharacterBody2D"]
+top_level = true
 script = SubResource("GDScript_b06dg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

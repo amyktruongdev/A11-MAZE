@@ -22,6 +22,7 @@ shape = SubResource("CapsuleShape2D_td0qi")
 script = ExtResource("3_dgerx")
 
 [node name="doorslam" type="AudioStreamPlayer2D" parent="."]
+top_level = true
 stream = ExtResource("4_a0gqw")
 volume_db = -4.0
 pitch_scale = 0.81
