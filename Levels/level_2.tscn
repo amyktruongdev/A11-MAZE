@@ -1,13 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://cf8mrnivp5ffe"]
+[gd_scene load_steps=12 format=3 uid="uid://cf8mrnivp5ffe"]
 
-[ext_resource type="PackedScene" uid="uid://doi2x6rbj0dr3" path="res://characters/player2.tscn" id="1_77oin"]
-[ext_resource type="Texture2D" uid="uid://c48jjfaj1tcyv" path="res://Tilesets/white.png" id="2_ghgd8"]
-[ext_resource type="PackedScene" uid="uid://brk43svge5wfo" path="res://coin.tscn" id="2_kex5m"]
-[ext_resource type="Texture2D" uid="uid://dn65gnl2acgh2" path="res://Tilesets/black.png" id="3_gos2b"]
-[ext_resource type="Script" path="res://exit2.gd" id="4_fe8bt"]
+[ext_resource type="PackedScene" uid="uid://brk43svge5wfo" path="res://coin.tscn" id="1_3k68i"]
+[ext_resource type="Texture2D" uid="uid://c48jjfaj1tcyv" path="res://Tilesets/white.png" id="2_aru3l"]
+[ext_resource type="Texture2D" uid="uid://dn65gnl2acgh2" path="res://Tilesets/black.png" id="3_1r2x5"]
+[ext_resource type="Script" path="res://exit2.gd" id="4_k1nfr"]
+[ext_resource type="PackedScene" uid="uid://doi2x6rbj0dr3" path="res://characters/player2.tscn" id="5_tic4d"]
+[ext_resource type="PackedScene" uid="uid://dqp1ixcn7uwf" path="res://tree.tscn" id="6_8nbxw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a4xpm"]
-texture = ExtResource("2_ghgd8")
+texture = ExtResource("2_aru3l")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -590,7 +591,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_a4xpm")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qdhja"]
-texture = ExtResource("3_gos2b")
+texture = ExtResource("3_1r2x5")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -744,15 +745,15 @@ size = Vector2(98, 88.3334)
 
 [node name="level2" type="Node2D"]
 
-[node name="coin2" parent="." instance=ExtResource("2_kex5m")]
+[node name="coin2" parent="." instance=ExtResource("1_3k68i")]
 position = Vector2(1369, 702)
 scale = Vector2(0.421875, 0.421875)
 
-[node name="coin3" parent="." instance=ExtResource("2_kex5m")]
+[node name="coin3" parent="." instance=ExtResource("1_3k68i")]
 position = Vector2(713, 680)
 scale = Vector2(0.5625, 0.5625)
 
-[node name="coin" parent="." instance=ExtResource("2_kex5m")]
+[node name="coin" parent="." instance=ExtResource("1_3k68i")]
 position = Vector2(263, 347)
 
 [node name="TileMap2" type="TileMap" parent="."]
@@ -769,19 +770,71 @@ layer_0/tile_data = PackedInt32Array(1114112, 524288, 5, 1179648, 524288, 5, 124
 [node name="exit2" type="Area2D" parent="."]
 position = Vector2(59, 351)
 scale = Vector2(0.75, 0.75)
-script = ExtResource("4_fe8bt")
+script = ExtResource("4_k1nfr")
 
 [node name="Sprite2D" type="Sprite2D" parent="exit2"]
 position = Vector2(1770.67, 181.333)
 scale = Vector2(0.653333, 0.646667)
-texture = ExtResource("2_ghgd8")
+texture = ExtResource("2_aru3l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit2"]
 position = Vector2(1774.67, 184)
 shape = SubResource("RectangleShape2D_f1sx1")
 
-[node name="Player" parent="." instance=ExtResource("1_77oin")]
+[node name="Player" parent="." instance=ExtResource("5_tic4d")]
 position = Vector2(59, 351)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree2" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(228, 194)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(71, 194)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree3" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(1382, 345)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree4" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(846, 367)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree5" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(373, 192)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree6" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(394, 513)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree7" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(1175, 557)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree8" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(555, 194)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree9" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(567, 758)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree10" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(180, 504)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree11" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(743, 199)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree12" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(932, 552)
+scale = Vector2(0.75, 0.75)
+
+[node name="tree13" parent="." instance=ExtResource("6_8nbxw")]
+position = Vector2(561, 519)
 scale = Vector2(0.75, 0.75)
 
 [connection signal="body_entered" from="exit2" to="exit2" method="_on_body_entered"]

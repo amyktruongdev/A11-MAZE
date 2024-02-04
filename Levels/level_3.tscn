@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://1x30gbse2kdu"]
+[gd_scene load_steps=11 format=3 uid="uid://1x30gbse2kdu"]
 
 [ext_resource type="PackedScene" uid="uid://doi2x6rbj0dr3" path="res://characters/player2.tscn" id="1_i6n80"]
 [ext_resource type="PackedScene" uid="uid://brk43svge5wfo" path="res://coin.tscn" id="1_uengl"]
 [ext_resource type="Texture2D" uid="uid://dn65gnl2acgh2" path="res://Tilesets/black.png" id="1_w31q7"]
 [ext_resource type="Texture2D" uid="uid://c48jjfaj1tcyv" path="res://Tilesets/white.png" id="3_hx4fe"]
+[ext_resource type="PackedScene" uid="uid://dqp1ixcn7uwf" path="res://tree.tscn" id="5_4nppp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kwxav"]
 texture = ExtResource("1_w31q7")
@@ -646,5 +647,73 @@ position = Vector2(1195, 920)
 
 [node name="coin5" parent="." instance=ExtResource("1_uengl")]
 position = Vector2(862, 619)
+
+[node name="tree2" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(38, 235)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree3" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(1569, 459)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree4" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(1186, 364)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree5" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(771, 725)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree6" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(555, 725)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree7" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(359, 234)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree8" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(476, 234)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree9" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(155, 468)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree10" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(851, 203)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree11" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(557, 491)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree12" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(355, 472)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree13" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(957, 809)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree14" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(1766, 341)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree15" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(1766, 696)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree16" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(1293, 581)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree17" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(1536, 140)
+scale = Vector2(0.5, 0.5)
+
+[node name="tree18" parent="." instance=ExtResource("5_4nppp")]
+position = Vector2(1843, 138)
+scale = Vector2(0.5, 0.5)
 
 [connection signal="body_entered" from="exit3" to="exit3" method="_on_body_entered"]

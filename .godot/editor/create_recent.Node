@@ -1,7 +1,8 @@
-TileMap
-AudioStreamPlayer2D
 CollisionShape2D
 Sprite2D
+StaticBody2D
+TileMap
+AudioStreamPlayer2D
 Area2D
 CanvasLayer
 AudioStreamPlayer
@@ -11,4 +12,3 @@ Button
 GridContainer
 Label
 Control
-VBoxContainer
