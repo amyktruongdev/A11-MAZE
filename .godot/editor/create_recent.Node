@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+AudioStreamPlayer2D
 CanvasLayer
 AudioStreamPlayer
 ColorRect
@@ -9,14 +9,6 @@ GridContainer
 Label
 Control
 VBoxContainer
-AudioStreamPlayer2D
 AudioStreamPlayer
 CollisionShape2D
-=======
 CollisionShape2D
-Sprite2D
->>>>>>> integration
-Area2D
-TileMap
-CharacterBody2D
-Node2D
