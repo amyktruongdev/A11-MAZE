@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfpe1bi44g1xh"]
+[gd_scene load_steps=5 format=3 uid="uid://ddqfws0gh886d"]
 
 [ext_resource type="Texture2D" uid="uid://byod24ix8xdri" path="res://art/A11-Maze.png" id="1_xcvvh"]
 [ext_resource type="Script" path="res://characters/Player2.gd" id="1_yoaq5"]
