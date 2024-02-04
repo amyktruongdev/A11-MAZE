@@ -3,7 +3,7 @@ extends Node
 
 const SAVE_FILE = "user://save_file.save"
 var loaded_stage = "res://Levels/game_level.tscn"
-#var stars =0 
+@onready var stars = get_node("/root/PlayerVariables").coins_collected
 
 
 # Called when the node enters the scene tree for the first time.
@@ -33,15 +33,17 @@ func _ready():
 func _process(delta):
 	pass
 	
+#func _save_to_file():
+	#var f = FileAccess.open(SAVE_FILE,FileAccess.WRITE)
+	#f.store_string(get_tree().current_scene.scene_file_path)
+	#f.close()
+
 func _save_to_file():
 	var f = FileAccess.open(SAVE_FILE,FileAccess.WRITE)
 	f.store_string(get_tree().current_scene.scene_file_path)
+	f.store_32(stars)
+	
 	f.close()
-
-#func _save_to_file():
-	#var f = FileAccess.open(SAVE_FILE,FileAccess.WRITE)
-	#f.store_string(get_tree().current_scene.scene_file_path + "\n" + to_string(stars))
-	#f.close()
 	
 
 	#print(get_tree().current_scene.scene_file_path)
@@ -52,3 +54,9 @@ func _notification(what):
 		_save_to_file()
 		get_tree().quit()
 
+func _input(event):
+	var scene_path = get_tree().current_scene.scene_file_path
+	if scene_path != 'res://Interface/title_screen.tscn':
+		if event is InputEventKey and event.pressed:
+			if event.keycode == KEY_ESCAPE:
+				get_tree().change_scene_to_file("res://Interface/title_screen.tscn")

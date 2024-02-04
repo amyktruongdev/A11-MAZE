@@ -949,3 +949,28 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Tree23" parent="." instance=ExtResource("7_3112v")]
 position = Vector2(780, 385)
+
+[node name="Tree24" parent="." instance=ExtResource("6_unthl")]
+position = Vector2(14, 477)
+
+[node name="Tree25" parent="." instance=ExtResource("6_unthl")]
+position = Vector2(13, 355)
+
+[node name="Tree26" parent="." instance=ExtResource("6_unthl")]
+position = Vector2(16, 231)
+
+[node name="Tree27" parent="." instance=ExtResource("6_unthl")]
+position = Vector2(1378, 623)
+
+[node name="Tree28" parent="." instance=ExtResource("6_unthl")]
+position = Vector2(1373, 237)
+
+[node name="Tree29" parent="." instance=ExtResource("6_unthl")]
+position = Vector2(1375, 359)
+
+[node name="Tree30" parent="." instance=ExtResource("6_unthl")]
+position = Vector2(1377, 493)
+
+[node name="Tree31" parent="." instance=ExtResource("6_unthl")]
+visible = false
+position = Vector2(1286, 703)
