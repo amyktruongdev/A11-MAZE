@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var player_vars = get_node("/root/PlayerVariables")
+@onready var player_vars = get_node("/root/<<<<<<<HEADPlayerVariables")
 @onready var twinklesparkle = $twinklesparkle
 func _on_body_entered(_body):
 	player_vars.coins_collected += 1

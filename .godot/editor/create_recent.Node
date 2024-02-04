@@ -1,3 +1,4 @@
+AudioStreamPlayer
 CollisionShape2D
 Sprite2D
 StaticBody2D
@@ -5,7 +6,6 @@ TileMap
 AudioStreamPlayer2D
 Area2D
 CanvasLayer
-AudioStreamPlayer
 ColorRect
 MarginContainer
 Button

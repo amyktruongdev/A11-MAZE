@@ -7,8 +7,9 @@ func _load_file():
 	if FileAccess.file_exists(SAVE_FILE):
 		print(SAVE_FILE)
 		var f = FileAccess.open(SAVE_FILE, FileAccess.READ)
+		print(f.get_as_text())
 		loaded_stage = (f.get_line().strip_edges())
-		print("loaded stage: " + loaded_stage + " |||| ")
+		print(loaded_stage + " " + f.get_line().strip_edges())
 		loaded_stars = int(f.get_line())
 		print('loaded stars: ',loaded_stars as int )
 		f.close()

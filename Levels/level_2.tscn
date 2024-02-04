@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://c48jjfaj1tcyv" path="res://Tilesets/white.png" id="2_aru3l"]
 [ext_resource type="Texture2D" uid="uid://dn65gnl2acgh2" path="res://Tilesets/black.png" id="3_1r2x5"]
 [ext_resource type="Script" path="res://exit2.gd" id="4_k1nfr"]
-[ext_resource type="PackedScene" uid="uid://doi2x6rbj0dr3" path="res://characters/player2.tscn" id="5_tic4d"]
-[ext_resource type="PackedScene" uid="uid://dqp1ixcn7uwf" path="res://tree.tscn" id="6_8nbxw"]
+[ext_resource type="PackedScene" uid="uid://dhi1lgr4gwgli" path="res://characters/player2.tscn" id="5_tic4d"]
+[ext_resource type="PackedScene" uid="uid://fxd1xvvwg17b" path="res://tree.tscn" id="6_8nbxw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a4xpm"]
 texture = ExtResource("2_aru3l")
@@ -786,55 +786,42 @@ position = Vector2(59, 351)
 scale = Vector2(0.75, 0.75)
 
 [node name="tree2" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(228, 194)
-scale = Vector2(0.75, 0.75)
+position = Vector2(279, 282)
 
 [node name="tree" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(71, 194)
-scale = Vector2(0.75, 0.75)
+position = Vector2(122, 282)
 
 [node name="tree3" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(1382, 345)
-scale = Vector2(0.75, 0.75)
+position = Vector2(1433, 433)
 
 [node name="tree4" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(846, 367)
-scale = Vector2(0.75, 0.75)
+position = Vector2(897, 455)
 
 [node name="tree5" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(373, 192)
-scale = Vector2(0.75, 0.75)
+position = Vector2(424, 280)
 
 [node name="tree6" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(394, 513)
-scale = Vector2(0.75, 0.75)
+position = Vector2(445, 601)
 
 [node name="tree7" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(1175, 557)
-scale = Vector2(0.75, 0.75)
+position = Vector2(1226, 645)
 
 [node name="tree8" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(555, 194)
-scale = Vector2(0.75, 0.75)
+position = Vector2(606, 282)
 
 [node name="tree9" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(567, 758)
-scale = Vector2(0.75, 0.75)
+position = Vector2(618, 846)
 
 [node name="tree10" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(180, 504)
-scale = Vector2(0.75, 0.75)
+position = Vector2(231, 592)
 
 [node name="tree11" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(743, 199)
-scale = Vector2(0.75, 0.75)
+position = Vector2(794, 287)
 
 [node name="tree12" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(932, 552)
-scale = Vector2(0.75, 0.75)
+position = Vector2(983, 640)
 
 [node name="tree13" parent="." instance=ExtResource("6_8nbxw")]
-position = Vector2(561, 519)
-scale = Vector2(0.75, 0.75)
+position = Vector2(612, 607)
 
 [connection signal="body_entered" from="exit2" to="exit2" method="_on_body_entered"]

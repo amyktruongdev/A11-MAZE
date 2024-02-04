@@ -3,7 +3,7 @@ extends Node
 
 const SAVE_FILE = "user://save_file.save"
 var loaded_stage = "res://Levels/game_level.tscn"
-@onready var stars = get_node("/root/PlayerVariables")
+@onready var stars = get_node("/root/<<<<<<<HEADPlayerVariables")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -51,9 +51,8 @@ func _save_to_file():
 	
 func _notification(what):
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
-		
 		print(loaded_stage)
-		await _save_to_file()
+		_save_to_file()
 		get_tree().quit()
 
 func _input(event):
@@ -61,5 +60,4 @@ func _input(event):
 	if scene_path != 'res://Interface/title_screen.tscn':
 		if event is InputEventKey and event.pressed:
 			if event.keycode == KEY_ESCAPE:
-				await _save_to_file()
 				get_tree().change_scene_to_file("res://Interface/title_screen.tscn")
