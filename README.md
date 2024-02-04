@@ -1,4 +1,4 @@
-# A11-MAZE
+# TEAM 3: A11-MAZE
 
 ## REQUIREMENTS
 - Using + integrating operating system level accesibility API's
