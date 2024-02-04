@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://dn65gnl2acgh2" path="res://Tilesets/black.png" id="2_8ymlq"]
 [ext_resource type="Texture2D" uid="uid://c48jjfaj1tcyv" path="res://Tilesets/white.png" id="3_27duv"]
-[ext_resource type="PackedScene" uid="uid://7v8ymm3bd5n3" path="res://exit.tscn" id="3_45yov"]
-[ext_resource type="PackedScene" uid="uid://brk43svge5wfo" path="res://coin.tscn" id="6_bvtsg"]
-[ext_resource type="PackedScene" uid="uid://doi2x6rbj0dr3" path="res://characters/player2.tscn" id="6_m5c4u"]
-[ext_resource type="PackedScene" uid="uid://dqp1ixcn7uwf" path="res://tree.tscn" id="6_unthl"]
+[ext_resource type="PackedScene" uid="uid://7v8ymm3bd5n3" path="res://Levels/exit.tscn" id="3_45yov"]
+[ext_resource type="PackedScene" uid="uid://cl5klt41xb5yi" path="res://coin.tscn" id="6_bvtsg"]
+[ext_resource type="PackedScene" uid="uid://fxd1xvvwg17b" path="res://tree.tscn" id="6_unthl"]
+[ext_resource type="PackedScene" uid="uid://q2kyos6yiq1e" path="res://assets/tree.tscn" id="7_c5cal"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2txdx"]
 texture = ExtResource("2_8ymlq")
@@ -1023,12 +1023,13 @@ position = Vector2(534, 495)
 scale = Vector2(0.5, 0.5)
 
 [node name="coin2" parent="." instance=ExtResource("6_bvtsg")]
-position = Vector2(904.5, 358.5)
+position = Vector2(956, 377)
 scale = Vector2(0.5, 0.5)
 
 [node name="coin" parent="." instance=ExtResource("6_bvtsg")]
 position = Vector2(598, 232)
 scale = Vector2(0.5, 0.5)
 
-[node name="Player" parent="." instance=ExtResource("6_m5c4u")]
-position = Vector2(71, 297)
+[node name="Tree24" parent="." instance=ExtResource("7_c5cal")]
+position = Vector2(711, 386)
+scale = Vector2(0.6, 0.6)

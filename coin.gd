@@ -5,4 +5,4 @@ extends Area2D
 func _on_body_entered(_body):
 	player_vars.coins_collected += 1
 	print(player_vars.coins_collected)
-	queue_free()
+	queue_free()	

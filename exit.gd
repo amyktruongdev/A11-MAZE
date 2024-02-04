@@ -1,7 +1,6 @@
 extends Area2D
-
-func _on_body_entered(body):
-	if body.is_in_group("Player"):
-		get_tree().change_scene_to_file("res://Levels/level_2.tscn")
-		print ("next level")
-
+@onready var success = $success
+func _on_body_entered(_body):
+	success.play()
+	await get_tree().create_timer(0.3).timeout
+	get_tree().change_scene_to_file("res://Levels/level_2.tscn")

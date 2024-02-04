@@ -125,4 +125,14 @@ func _on_CloseButton_pressed() -> void:
 	SWLogger.info("Closing SilentWolf leaderboard, switching to scene: " + str(scene_name))
 	#global.reset()
 	print("Close button pressed")
-	get_tree().change_scene_to_file(scene_name)
+	#get_tree().quit()
+	get_tree().change_scene_to_file("res://Interface/title_screen.tscn")
+	
+
+
+
+
+
+
+func _on_close_button_mouse_entered():
+	$closeleaderboard.play()
