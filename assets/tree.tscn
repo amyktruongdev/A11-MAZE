@@ -5,7 +5,8 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_nim8m"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h3jv8"]
-height = 806.0
+radius = 1.49676
+height = 179.809
 
 [node name="Tree" type="Node2D"]
 
@@ -13,8 +14,11 @@ height = 806.0
 physics_material_override = SubResource("PhysicsMaterial_nim8m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-7, 3)
 scale = Vector2(18.7071, -1.03443)
 shape = SubResource("CapsuleShape2D_h3jv8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-34, -28)
+scale = Vector2(0.306098, 0.306098)
 texture = ExtResource("1_bfqj0")

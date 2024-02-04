@@ -1013,5 +1013,5 @@ position = Vector2(598, 232)
 scale = Vector2(0.5, 0.5)
 
 [node name="Tree24" parent="." instance=ExtResource("7_c5cal")]
-position = Vector2(727, 375)
-scale = Vector2(0.15, 0.15)
+position = Vector2(711, 386)
+scale = Vector2(0.6, 0.6)
