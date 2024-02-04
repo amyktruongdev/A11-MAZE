@@ -1,6 +1,6 @@
+Area2D
 TileMap
 CollisionShape2D
-Area2D
 Sprite2D
 CharacterBody2D
 Node2D

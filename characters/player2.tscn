@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8cl1qa0dyrvf"]
+[gd_scene load_steps=4 format=3 uid="uid://b1swec0fwicen"]
 
 [ext_resource type="Texture2D" uid="uid://byod24ix8xdri" path="res://art/A11-Maze.png" id="1_nyhff"]
 [ext_resource type="Script" path="res://characters/player2.gd" id="1_sbloi"]
@@ -7,7 +7,7 @@
 radius = 56.0
 height = 138.0
 
-[node name="player2" type="CharacterBody2D" groups=["Player"]]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_sbloi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

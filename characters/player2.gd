@@ -23,3 +23,7 @@ func _physics_process(_delta):
 	
 	move_and_collide(input_direction)
 
+
+func _on_exit_body_entered(body):
+	get_tree().change_scene_to_file("res://level_2.tscn")
+	print ("next level") # Replace with function body.
