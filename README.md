@@ -1,10 +1,10 @@
 # TEAM 3: A11-MAZE
 
-## Mentors
+## MENTORS
 - Max Hops 
 - Cordero Hernandez
 
-## Honorable Mentions
+## HONORABLE MENTIONS
 - Doris Chaney
 - Todd Uramoto
 - Leonard Tatum
