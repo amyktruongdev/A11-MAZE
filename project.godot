@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 PlayerVariables="*res://characters/player_variables.gd"
+SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
+Global="*res://global.gd"
 
 [display]
 
