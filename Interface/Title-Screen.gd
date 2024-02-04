@@ -40,3 +40,7 @@ func _on_leaderboard_pressed():
 	#get_tree().change_scene_to_file("res://Interface/options_screen.tscn")
 	await get_tree().change_scene_to_file("res://addons/silent_wolf/Scores/Leaderboard.tscn")
 	
+
+
+func _on_leaderboard_mouse_entered():
+	$leaderboardsound.play()

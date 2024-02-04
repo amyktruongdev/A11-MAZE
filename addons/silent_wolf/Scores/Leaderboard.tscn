@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://b2h8ok8yfc7wb"]
+[gd_scene load_steps=8 format=3 uid="uid://b2h8ok8yfc7wb"]
 
 [ext_resource type="Script" path="res://addons/silent_wolf/Scores/Leaderboard.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://bvsg5hjmcy4x" path="res://soundeffects/backitupsound.mp3" id="2_f1cuk"]
 [ext_resource type="Theme" uid="uid://d2eakbmaefnt6" path="res://addons/silent_wolf/assets/themes/sw_theme.tres" id="2_ixaq4"]
 [ext_resource type="PackedScene" uid="uid://clllbf6am8qdf" path="res://addons/silent_wolf/common/SWButton.tscn" id="4"]
 [ext_resource type="Texture2D" uid="uid://cp23ns71noorh" path="res://art/Logo A11-Maze.png" id="4_8n4dg"]
@@ -13,6 +14,9 @@
 position = Vector2(-328, -248)
 script = ExtResource("1")
 metadata/_edit_vertical_guides_ = [-792.0]
+
+[node name="closeleaderboard" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_f1cuk")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 328.0
@@ -82,4 +86,5 @@ position = Vector2(464, 400)
 scale = Vector2(0.745863, 0.745863)
 texture = ExtResource("4_8n4dg")
 
+[connection signal="mouse_entered" from="Board/CloseButtonContainer/CloseButton" to="." method="_on_close_button_mouse_entered"]
 [connection signal="pressed" from="Board/CloseButtonContainer/CloseButton" to="." method="_on_CloseButton_pressed"]
