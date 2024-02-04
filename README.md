@@ -9,7 +9,7 @@
 - Todd Uramoto
 - Leonard Tatum
 - Jason McDonald
-- 
+  
 ## REQUIREMENTS
 - Using + integrating operating system level accesibility API's
 - Save Progress
