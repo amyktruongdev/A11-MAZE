@@ -73,6 +73,16 @@ Here is a snippet of what the API implimentation is for SILENTWOLF.\
  
 
 ## DEMO GAME PHOTOS
+A11-Maze Level 1:
 
+![Screenshot 2024-02-04 093226](https://github.com/JoergFranke/phoneme_recognition/assets/158373403/7155297d-e753-46b0-8615-3b958fc72122)
+
+A11-Maze Level 2:
+
+![Screenshot 2024-02-04 093252](https://github.com/JoergFranke/phoneme_recognition/assets/158373403/3dd50070-8429-4950-9b93-f44fa101012c)
+
+A11-Maze Level 3:
+
+![Screenshot 2024-02-04 093901](https://github.com/JoergFranke/phoneme_recognition/assets/158373403/da5e63f9-a13a-4873-bfa4-a094709fa715)
 
 
