@@ -1,3 +1,3 @@
 extends Node
 
-var coins_collected = 0;
+var coins_collected = 0
