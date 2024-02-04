@@ -3,6 +3,7 @@ extends Node
 
 const SAVE_FILE = "user://save_file.save"
 var loaded_stage = "res://Levels/game_level.tscn"
+#var stars =0 
 
 
 # Called when the node enters the scene tree for the first time.
@@ -36,6 +37,11 @@ func _save_to_file():
 	var f = FileAccess.open(SAVE_FILE,FileAccess.WRITE)
 	f.store_string(get_tree().current_scene.scene_file_path)
 	f.close()
+
+#func _save_to_file():
+	#var f = FileAccess.open(SAVE_FILE,FileAccess.WRITE)
+	#f.store_string(get_tree().current_scene.scene_file_path + "\n" + to_string(stars))
+	#f.close()
 	
 
 	#print(get_tree().current_scene.scene_file_path)
