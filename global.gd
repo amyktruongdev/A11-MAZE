@@ -3,7 +3,7 @@ extends Node
 
 const SAVE_FILE = "user://save_file.save"
 var loaded_stage = "res://Levels/game_level.tscn"
-@onready var stars = get_node("/root/PlayerVariables").coins_collected
+@onready var stars = get_node("/root/PlayerVariables")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -39,11 +39,12 @@ func _process(delta):
 	#f.close()
 
 func _save_to_file():
-	var f = FileAccess.open(SAVE_FILE,FileAccess.WRITE)
-	f.store_string(get_tree().current_scene.scene_file_path)
-	f.store_32(stars)
+	var stars_to_save = "\n" + str(stars.coins_collected)
+	print('file saved: stars saved: ' + stars_to_save)
+	var k = FileAccess.open(SAVE_FILE,FileAccess.WRITE)
+	k.store_string(get_tree().current_scene.scene_file_path + stars_to_save)
+	k.close()
 	
-	f.close()
 	
 
 	#print(get_tree().current_scene.scene_file_path)
