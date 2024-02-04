@@ -1,6 +1,13 @@
+ColorRect
+MarginContainer
+Sprite2D
+Button
+GridContainer
+Label
+Control
+VBoxContainer
 CollisionShape2D
 Area2D
 TileMap
-Sprite2D
 CharacterBody2D
 Node2D
