@@ -1,13 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1swec0fwicen"]
+[gd_scene load_steps=5 format=3 uid="uid://doi2x6rbj0dr3"]
 
 [ext_resource type="Texture2D" uid="uid://byod24ix8xdri" path="res://art/A11-Maze.png" id="1_nyhff"]
 [ext_resource type="Script" path="res://characters/player2.gd" id="1_sbloi"]
+[ext_resource type="AudioStream" uid="uid://vgt8o2atk2xo" path="res://sounds/doorslam.mp3" id="3_btomg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_td0qi"]
 radius = 56.0
-height = 138.0
+height = 144.0
 
-[node name="player2" type="CharacterBody2D" groups=["Player"]]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_sbloi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -15,5 +16,10 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_nyhff")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3, -5)
+position = Vector2(2, -4)
 shape = SubResource("CapsuleShape2D_td0qi")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="doorslam" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_btomg")
