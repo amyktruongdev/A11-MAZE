@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://c17kejc0jh7km"]
+[gd_scene load_steps=4 format=3 uid="uid://fxd1xvvwg17b"]
 
-[ext_resource type="Texture2D" path="res://art/tree_reg.png" id="1_ey7g6"]
 [ext_resource type="Script" path="res://tree.gd" id="1_hw3v8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jrhwe"]
@@ -19,3 +18,5 @@ position = Vector2(-53, -85.5)
 shape = SubResource("RectangleShape2D_jrhwe")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+
+[ext_resource type="Texture2D" uid="uid://cwxlxeoglrc70" path="res://art/tree_reg.png" id="1_ey7g6"]
