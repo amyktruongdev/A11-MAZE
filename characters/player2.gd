@@ -3,6 +3,7 @@
 extends CharacterBody2D
 
 @export var move_speed : float = 300
+@onready var doorslam = $doorslam
 
 func _physics_process(_delta):
 	var x_axis = 0
@@ -11,7 +12,6 @@ func _physics_process(_delta):
 		x_axis += 50
 	elif Input.is_action_just_pressed("left"):
 		x_axis -= 50
-		
 	if Input.is_action_just_pressed("up"):
 		y_axis -= 50
 	elif Input.is_action_just_pressed("down"):
@@ -21,9 +21,9 @@ func _physics_process(_delta):
 	
 	velocity = input_direction * move_speed
 	
-	move_and_collide(input_direction)
-
-
+	if move_and_collide(input_direction):
+		doorslam.play()
+		
 func _on_exit_body_entered(body):
 	get_tree().change_scene_to_file("res://level_2.tscn")
 	print ("next level") # Replace with function body.
