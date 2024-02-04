@@ -1,20 +1,42 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfpe1bi44g1xh"]
+[gd_scene load_steps=4 format=3 uid="uid://ddqfws0gh886d"]
 
-[ext_resource type="Script" path="res://characters/Player.gd" id="1_1nism"]
 [ext_resource type="Texture2D" uid="uid://byod24ix8xdri" path="res://art/A11-Maze.png" id="1_xcvvh"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v63wb"]
-size = Vector2(260, 338)
+[sub_resource type="GDScript" id="GDScript_b06dg"]
+script/source = "extends CharacterBody2D
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_1nism")
+var currPos = [50,260]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(26, 67)
-scale = Vector2(0.2, 0.2)
-shape = SubResource("RectangleShape2D_v63wb")
+func _input(event):
+	if event.is_action_pressed(\"ui_right\"):
+		currPos[0] += 100
+	elif event.is_action_pressed(\"ui_left\"):
+		currPos[0] -= 100
+	elif event.is_action_pressed(\"ui_left\"):
+		currPos[0] -= 100
+	elif event.is_action_pressed(\"ui_up\"):
+		currPos[1] -= 100
+	elif event.is_action_pressed(\"ui_down\"):
+		currPos[1] += 100
+					 
+	self.position = Vector2(currPos[0],currPos[1])
+	
+
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s56t4"]
+radius = 207.0
+height = 650.0
+
+[node name="Player" type="CharacterBody2D"]
+script = SubResource("GDScript_b06dg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(21, 43)
+position = Vector2(-0.999998, -0.999996)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_xcvvh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.6, -7)
+scale = Vector2(0.2, 0.2)
+shape = SubResource("CapsuleShape2D_s56t4")

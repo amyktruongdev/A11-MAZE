@@ -13,7 +13,7 @@ func _ready():
 	
 	print(apiKey)
 	SilentWolf.configure({
-		"api_key":	apiKey,
+		"api_key":    apiKey,
 		"game_id": "a11maze",
 		"log_level": 3
 	})
@@ -29,5 +29,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
-
