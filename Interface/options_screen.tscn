@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctl02hdaa1sb2"]
+[gd_scene load_steps=5 format=3 uid="uid://ctl02hdaa1sb2"]
 
 [ext_resource type="Script" path="res://Interface/options_screen.gd" id="1_xdop4"]
+[ext_resource type="AudioStream" uid="uid://drc5mtjqtyw21" path="res://soundeffects/volumegamesound.mp3" id="2_a8opr"]
+[ext_resource type="AudioStream" uid="uid://be30adefnfqji" path="res://soundeffects/back.mp3" id="2_xgf43"]
+[ext_resource type="AudioStream" uid="uid://1e08d55rcyd6" path="res://soundeffects/resizegui.mp3" id="3_2sir1"]
 
 [node name="Title-Screen" type="Control"]
 layout_mode = 3
@@ -10,6 +13,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xdop4")
+
+[node name="volumegamesound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_a8opr")
+
+[node name="backgamesound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_xgf43")
+
+[node name="resizeguigamesound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_2sir1")
 
 [node name="Background Color" type="ColorRect" parent="."]
 layout_mode = 0
@@ -45,4 +57,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.756863, 0.027451, 1)
 text = "Resize GUI"
 
+[connection signal="mouse_entered" from="MarginContainer/Button Containers/Back" to="." method="_on_back_mouse_entered"]
 [connection signal="pressed" from="MarginContainer/Button Containers/Back" to="." method="_on_back_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/Button Containers/Volume" to="." method="_on_volume_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/Button Containers/Resize GUI" to="." method="_on_resize_gui_mouse_entered"]

@@ -8,3 +8,5 @@ res://Interface/options_screen.tscn
 res://Interface/test.tscn
 res://Interface/Title-Screen.gd
 res://Interface/options_screen.gd
+res://Interface/New Game.gd
+res://Interface/newgamesound.gd
