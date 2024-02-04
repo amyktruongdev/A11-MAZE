@@ -1,9 +1,10 @@
+res://coin.gd
 res://Levels/game_level.tscn
 res://exit.tscn
-res://level_2.tscn
 res://characters/player2.tscn
-res://characters/Player.tscn
 res://tree.tscn
+res://coin.tscn
+res://exit.gd
 res://characters/player2.gd
-res://star.tscn
-res://star.gd
+res://player_variables.gd
+res://tree.gd
