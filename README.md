@@ -1,14 +1,14 @@
 # TEAM 3: A11-MAZE
+- Sam Hernandez
+- Connie Chen
+- Amy Truong
+- Brett Bass
+- Aolany Acosta
+
 
 ## MENTORS
 - Max Hops 
 - Cordero Hernandez
-
-## HONORABLE MENTIONS
-- Doris Chaney
-- Todd Uramoto
-- Leonard Tatum
-- Jason McDonald
   
 ## REQUIREMENTS
 - Using + integrating operating system level accesibility API's
