@@ -36,7 +36,11 @@ func _on_quit_mouse_entered():
 
 
 func _on_leaderboard_pressed():
-	var sw_result: Dictionary = await SilentWolf.Scores.get_scores().sw_get_scores_complete
+	var sw_result: Dictionary = await SilentWolf.Scores.get_scores(5).sw_get_scores_complete
 	#get_tree().change_scene_to_file("res://Interface/options_screen.tscn")
 	await get_tree().change_scene_to_file("res://addons/silent_wolf/Scores/Leaderboard.tscn")
 	
+
+
+func _on_leaderboard_mouse_entered():
+	$leaderboardsound.play()

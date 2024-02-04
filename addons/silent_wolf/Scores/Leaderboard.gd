@@ -127,3 +127,12 @@ func _on_CloseButton_pressed() -> void:
 	print("Close button pressed")
 	#get_tree().quit()
 	get_tree().change_scene_to_file("res://Interface/title_screen.tscn")
+	
+
+
+
+
+
+
+func _on_close_button_mouse_entered():
+	$closeleaderboard.play()
