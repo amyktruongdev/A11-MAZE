@@ -24,6 +24,3 @@ func _physics_process(_delta):
 	if move_and_collide(input_direction):
 		doorslam.play()
 		
-func _on_exit_body_entered(body):
-	get_tree().change_scene_to_file("res://level_2.tscn")
-	print ("next level") # Replace with function body.
